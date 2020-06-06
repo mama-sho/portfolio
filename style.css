@@ -1,5 +1,5 @@
 body {
-  background-image: url("/img/portfolio_background-filter.png");
+  background-image: url('./img/portfolio_background-filter.png');
   background-attachment: fixed;
   background-size: cover;
 }
@@ -15,11 +15,11 @@ body {
 }
 
 .profile-area .icon {
-  background-image: url("/img/portfolio icon.png");
+  background-image: url('./img/portfolio icon.png');
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   background-position: center center;
 }
@@ -30,7 +30,7 @@ body {
 
 .works-area #test {
   -webkit-box-shadow: 0 0 3px 0 gray, 0 2px 3px 0 gray;
-          box-shadow: 0 0 3px 0 gray, 0 2px 3px 0 gray;
+  box-shadow: 0 0 3px 0 gray, 0 2px 3px 0 gray;
   -webkit-transition: 0.3px;
   transition: 0.3px;
 }
@@ -52,7 +52,7 @@ body {
 
 .modal-img {
   -webkit-box-shadow: 0 7px 7px #aaa;
-          box-shadow: 0 7px 7px #aaa;
+  box-shadow: 0 7px 7px #aaa;
   display: inline-block;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -60,9 +60,9 @@ body {
 
 .modal-img :hover {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transform: translate(0px, 4px);
-          transform: translate(0px, 4px);
+  transform: translate(0px, 4px);
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -124,7 +124,7 @@ body {
     width: 200px;
     height: 200px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .skill-area {
     height: 800px;
