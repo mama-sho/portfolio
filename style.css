@@ -1,0 +1,133 @@
+body {
+  background-image: url("/img/portfolio_background-filter.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.portfolio-title {
+  margin-top: 230px;
+  margin-bottom: 360px;
+  text-shadow: 2px 2px 3px #a9da89;
+}
+
+.profile-area {
+  height: 500px;
+}
+
+.profile-area .icon {
+  background-image: url("/img/portfolio icon.png");
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  background-position: center center;
+}
+
+.works-area {
+  height: 600px;
+}
+
+.works-area #test {
+  -webkit-box-shadow: 0 0 3px 0 gray, 0 2px 3px 0 gray;
+          box-shadow: 0 0 3px 0 gray, 0 2px 3px 0 gray;
+  -webkit-transition: 0.3px;
+  transition: 0.3px;
+}
+
+.works-area #test :hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.works-area .card-text {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  .works-area {
+    height: 900px;
+  }
+}
+
+.modal-img {
+  -webkit-box-shadow: 0 7px 7px #aaa;
+          box-shadow: 0 7px 7px #aaa;
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal-img :hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(0px, 4px);
+          transform: translate(0px, 4px);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.modal .modal-text {
+  font-size: 15px;
+}
+
+.skill-area {
+  background-color: white;
+  height: 720px;
+}
+
+.skill-area .card-header {
+  border-color: #08869c;
+}
+
+.skill-area .text {
+  font-size: 15px;
+}
+
+.skill-area .progress-bar {
+  width: 0;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  border-radius: 10px;
+}
+
+.contact-area {
+  height: 400px;
+}
+
+.contact-area input {
+  border-bottom: solid 1px black;
+  outline: none;
+}
+
+.contact-area textarea {
+  border-bottom: solid 1px black;
+  outline: none;
+}
+
+.footer-area {
+  height: 200px;
+  background-color: #a9da89;
+}
+
+.footer-area h1 {
+  font-size: 50px;
+}
+
+.footer-down {
+  height: 50px;
+  background-color: #3ddfc4;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-area .icon {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .skill-area {
+    height: 800px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

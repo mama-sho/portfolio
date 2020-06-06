@@ -1,0 +1,112 @@
+body {
+  background-image: url('/img/portfolio_background-filter.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.portfolio-title {
+  margin-top: 230px;
+  margin-bottom: 360px;
+  text-shadow: 2px 2px 3px #a9da89;
+}
+
+.profile-area {
+  height: 500px;
+  .icon {
+    background-image: url('/img/portfolio\ icon.png');
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-position: center center;
+  }
+}
+
+.works-area {
+  height: 600px;
+  #test {
+    box-shadow: 0 0 3px 0 gray, 0 2px 3px 0 gray;
+    transition: 0.3px;
+  }
+  #test :hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .works-area {
+    height: 900px;
+  }
+}
+
+.modal-img {
+  box-shadow: 0 7px 7px #aaa;
+  display: inline-block;
+  transition: 0.2s;
+}
+.modal-img :hover {
+  box-shadow: none;
+  transform: translate(0px, 4px);
+  transition: 0.1s;
+}
+.modal {
+  .modal-text {
+    font-size: 15px;
+  }
+}
+
+.skill-area {
+  background-color: white;
+  height: 720px;
+  .card-header {
+    border-color: rgb(8, 134, 156);
+  }
+  .text {
+    font-size: 15px;
+  }
+  .progress-bar {
+    width: 0;
+    transition: 0.5s linear;
+    border-radius: 10px;
+  }
+}
+
+.contact-area {
+  height: 400px;
+  input {
+    border-bottom: solid 1px black;
+    outline: none;
+  }
+  textarea {
+    border-bottom: solid 1px black;
+    outline: none;
+  }
+}
+
+.footer-area {
+  height: 200px;
+  background-color: #a9da89;
+  h1 {
+    font-size: 50px;
+  }
+}
+.footer-down {
+  height: 50px;
+  background-color: rgb(61, 223, 196);
+}
+
+@media screen and (max-width: 767px) {
+  .profile-area {
+    .icon {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  .skill-area {
+    height: 800px;
+  }
+}
