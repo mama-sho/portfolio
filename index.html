@@ -78,9 +78,10 @@
           Works
         </h1>
         <p class="text-center mb-1">作品物</p>
+        <p class="ml-3">※クリックで詳細が見れます</p>
         <div class="row mt-2">
           <div class="work offset-3 offset-lg-0 col-6 col-lg-4 pt-4">
-            <a id="test" data-toggle="modal" data-target="#myModal">
+            <a id="test" data-toggle="modal" data-target="#ShareCode-Modal">
               <div class="card">
                 <img
                   class="card-img-top img-fluid"
@@ -89,21 +90,57 @@
                 />
                 <div class="card-body">
                   <h4 class="card-title text-center">Share Code</h4>
-                  <p class="card-text mb-4">
+                  <p class="card-text">
                     音楽のコードを保存したり、共有したり相談したりするwebアプリケーション
                   </p>
                 </div>
               </div>
             </a>
           </div>
-          <p class="col-6 col-lg-4 border">aa</p>
-          <p class="col-6 col-lg-4 border">aa</p>
+          <div class="work offset-3 offset-lg-0 col-6 col-lg-4 pt-4">
+            <a
+              id="test"
+              data-toggle="modal"
+              data-target="#ChoiceCocktail-Modal"
+            >
+              <div class="card">
+                <img
+                  class="card-img-top img-fluid"
+                  src="./img/choice-cocktailImage.png"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-center">Choice Cocktail</h4>
+                  <p class="card-text">
+                    いくつかの条件で絞ってカクテルのレシピを検索できるwebアプリケーション
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="work offset-3 offset-lg-0 col-6 col-lg-4 pt-4">
+            <a id="test" data-toggle="modal" data-target="#Portfolio-Modal">
+              <div class="card">
+                <img
+                  class="card-img-top img-fluid"
+                  src="./img/portfolio-image.png"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-center">Portfolio</h4>
+                  <p class="card-text mb-3">
+                    このポートフォリオサイト
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- MODAL -->
-    <div class="modal" id="myModal">
+    <!-- MODAL shareCode-->
+    <div class="modal" id="ShareCode-Modal">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-body">
@@ -143,7 +180,7 @@
                 </p>
                 <h5 class="text-center">使用言語など</h5>
                 <p>
-                  AWS(S3), express, Node.js, HTML/CSS, ejs, Bootstrap, jQuery,
+                  AWS(S3), Express, Node.js, HTML/CSS, ejs, Bootstrap, jQuery,
                   javascrpt, PostgreSQL, sequelize, Ajax, passport
                 </p>
               </div>
@@ -204,6 +241,191 @@
                   id="modal-img"
                   class="img-fluid modal-img mt-4 mb-4"
                   src="./img/shacode--.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal choice cocktail-->
+    <div class="modal" id="ChoiceCocktail-Modal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <button class="float-right" data-dismiss="modal">
+                  <i class="fas fa-times-circle fa-2x" style="color: red;"></i>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <h4 class="text-center mb-4">Choice Cocktail</h4>
+                <p class="modal-text">
+                  多種多様あるカクテルの中から、作る物を選ぶのに、どんなものがあるの？何を作ろうか…と、よく悩むので
+                  ベースのお酒、技法、味わい等で、検索できるアプリケーションがあればいいな。と思い作成しました。
+                  このアプリケーケーションでは、 React.js,
+                  APIの使用,に挑戦しました。
+                  APIはバックエンドで取得するようにしてます
+                </p>
+                <p class="mt-5">
+                  <a
+                    href="https://choice-cocktail.herokuapp.com/"
+                    target="_blank"
+                  >
+                    <i class="fas fa-video"></i>
+                    viwe
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/mama-sho/cocktail"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </p>
+                <h5 class="text-center">使用言語など</h5>
+                <p>
+                  React.js, Bootstrap, Express, Node.js, GoogleCustomSearch API,
+                </p>
+              </div>
+              <div class="col-lg-8">
+                <div class="row mt-5 mb-3">
+                  <div class="col-2 ml-4">
+                    <span class="modal-img">
+                      <img
+                        id="choiceCocktail-image"
+                        onclick="changeImg(event)"
+                        src="./img/choice-cocktailImage.png"
+                        style="width: 100px;"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span class="modal-img">
+                      <img
+                        id="choiceCocktail-image"
+                        onclick="changeImg(event)"
+                        src="./img/choice-cocktailImage-2.png"
+                        style="width: 100px;"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </div>
+                <img
+                  id="ChoiceCocktail-modal-img"
+                  class="img-fluid modal-img mt-4 mb-4"
+                  src="./img/choice-cocktailImage.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal daiki portfolio-->
+    <div class="modal" id="Portfolio-Modal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <button class="float-right" data-dismiss="modal">
+                  <i class="fas fa-times-circle fa-2x" style="color: red;"></i>
+                </button>
+              </div>
+              <div class="col-lg-4">
+                <h4 class="text-center mb-4">Portfolio</h4>
+                <p class="modal-text">
+                  このサイトにポートフォリオです。
+                  シンプルで観やすく作ろように心がけました。
+                  gitpagesで公開しています。
+                </p>
+
+                <p>
+                  <a
+                    href="https://mama-sho.github.io/portfolio/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </p>
+                <h5 class="text-center">使用言語など</h5>
+                <p>
+                  HTML/CSS, SCSS, Bootstrap, jQuery,
+                </p>
+              </div>
+              <div class="col-lg-8">
+                <div class="row mt-5 mb-3">
+                  <div class="col-2 ml-4">
+                    <span class="modal-img">
+                      <img
+                        id="portfolio-image"
+                        onclick="changeImg(event)"
+                        src="./img/portfolio-image.png"
+                        style="width: 100px;"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span class="modal-img">
+                      <img
+                        id="portfolio-image"
+                        onclick="changeImg(event)"
+                        src="./img/portfolio-image2.png"
+                        style="width: 100px;"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span class="modal-img">
+                      <img
+                        id="portfolio-image"
+                        onclick="changeImg(event)"
+                        src="./img/portfolio-image5.png"
+                        alt=""
+                        style="width: 100px;"
+                      />
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span class="modal-img">
+                      <img
+                        id="portfolio-image"
+                        onclick="changeImg(event)"
+                        src="./img/portfolio-image3.png"
+                        alt=""
+                        style="width: 100px;"
+                      />
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span class="modal-img">
+                      <img
+                        id="portfolio-image"
+                        onclick="changeImg(event)"
+                        src="./img/portfolio-image4.png"
+                        alt=""
+                        style="width: 100px;"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <img
+                  id="Portfolio-modal-img"
+                  class="img-fluid modal-img mt-4 mb-4"
+                  src="./img/portfolio-image.png"
                   alt=""
                 />
               </div>
@@ -720,7 +942,14 @@
       // 画像切替機能
       function changeImg(event) {
         var src = event.target.src
-        var target = document.getElementById('modal-img')
+        var targetId = event.target.id
+        if (targetId === 'choiceCocktail-image') {
+          var target = document.getElementById('ChoiceCocktail-modal-img')
+        } else if (targetId === 'portfolio-image') {
+          var target = document.getElementById('Portfolio-modal-img')
+        } else {
+          var target = document.getElementById('modal-img')
+        }
         target.setAttribute('src', src)
       }
 
